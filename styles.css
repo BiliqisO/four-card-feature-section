@@ -1,0 +1,86 @@
+
+body{
+
+width: 1024px;
+background-color: white;
+margin: 4rem auto 1rem auto;
+padding: 0px;
+color: hsl(234, 12%, 34%);
+}
+header *{
+    padding: 0;
+    margin: 0;
+}
+.top{
+    text-align: center;
+    width: 450px;
+    margin: 0 auto; 
+    height: 20vh;
+
+}
+.cards{
+    /* background-color: aqua; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr );
+    gap: 20px;
+}
+.card{
+    width: 275px;
+    height: 175px;
+    padding: 23px 25px ;
+    margin: 30px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+   
+}
+.card *{
+    padding: 0;
+    margin: 7px 
+}
+.card>img{
+    max-width: 55px;
+    margin-top: 32px;
+    align-self: flex-end;
+
+}
+.team{
+    border-top: 5px solid hsl(0, 78%, 62%);
+   
+}
+.supervisor{
+    border-top: 5px solid hsl(180, 62%, 55%);
+   
+}
+.karma{
+    border-top: 5px solid hsl(34, 97%, 64%);
+    grid-column: 2;
+}
+.calculator{
+    border-top: 5px solid hsl(212, 86%, 64%);
+    
+}
+.supervisor,
+.calculator {
+    grid-row: span 2;
+    align-self: center;
+}
+@media only screen and (max-width:600px){
+    body{
+        width: 100%;
+        padding: 20px;
+    }
+    .top{
+        width: 100%;
+    }
+    .cards{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    
+    }
+    .cards *{
+        position: relative;
+    }
+}
